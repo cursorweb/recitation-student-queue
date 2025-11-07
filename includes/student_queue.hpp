@@ -15,10 +15,10 @@ public:
   void Dequeue();
   Student Front() const;
   void Display() const;
-
-private:
   Node* head_ = nullptr;
   Node* tail_ = nullptr;
+
+private:
   void Clear();
 };
 

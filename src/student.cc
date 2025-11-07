@@ -10,6 +10,9 @@ double Student::GetAttendancePercentage() const {
   return attendancePercentage_;
 }
 bool Student::operator<(const Student& other) const {
-  // TODO
-  return true;
+  if (attendancePercentage_ == other.attendancePercentage_) {
+    return gpa_ > other.gpa_;
+  }
+
+  return attendancePercentage_ < other.attendancePercentage_;
 }
